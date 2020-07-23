@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-size: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    background: rgba(255,255,255,.9);
+    line-height: 60px;
+    border-bottom: 2px solid #489EB0;
+}
+.navbar-brand {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+.navbar .nav-item {
+    font-size: 1.4rem;
+    padding-right: 20px;
+}
+.navbar .nav-item .nav-link {
+    color: #252525;
+    opacity: .9;
+}
+.navbar .nav-item .nav-link:hover{
+    color: #51A2B3;
+}
+
+section{
+    padding: 80px 0;
+}
+.home{
+    width: 100%;
+    height: 620px;
+    margin-top: 90px;
+    background: linear-gradient(rgba(72, 158, 176, .8),rgba(72, 158, 176, .8)),url('img/hero-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home .first{
+    color: white;
+}
+.home .first button{
+    display: block;
+    text-align: center;
+   left: 0;
+   right: 0;
+   margin: auto;
+   border: 1px solid white;
+   background: none;
+   color: white;
+   padding: 10px 20px;
+   font-size: 19px;
+   transition: all .5s ease;
+   cursor: pointer;
+}
+.home .first button:hover{
+    background: #fff;
+    color: #000;
+}
+.home img{
+    margin-top: -75px;
+    z-index: -100;
+}
+.form{
+    background: #252525;
+    padding: 50px 0;
+}
+.box .card .card-body{
+    border: 1px solid #489EB0;
+}
+.one,.three{
+    transition: all .5s ease;
+    color: #489EB0;
+}
+
+.one:hover,
+.three:hover{
+    background: #489EB0;
+    color: #fff;
+}
+.tow,.four{
+    transition: all .5s ease;
+    background: #489EB0;
+    color: #fff;
+}
+.tow:hover,
+.four:hover{
+    background: none;
+    color: #000;
+}
+.coll{
+    background: #F8F9FA;
+}
+.coll .card span{
+    font-size: 20px;
+    font-weight: 400;
+}
+.coll .card .card-header{
+    cursor: pointer;
+}
+.coll .card .card-body{
+    text-align: center;
+}
+.meet .card{
+    transition: all .5s ease;
+}
+.meet .card img{
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;  
+    margin-top: -50px;  
+}
+.meet .card .icon .fa{
+    font-size: 25px;
+    color: #3292A6;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+.meet .card .icon .fa:hover{
+    transform: rotate(360deg);
+}
+.meet .card:hover{
+    background: #3292A6;
+    color: #fff;
+}
+.meet .card:hover .icon .fa{
+    color: #fff;
+}
+.contact{
+    background: #F8F9FA;
+}
+footer{
+    bottom: 0;
+    color: #fff;
+    font-weight: 500;
+}
+.footer .p{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.footer a{
+    color: #fff;
+}
+.bars{
+    font-size: 30px;
+    line-height: 100px;
+    cursor: pointer;
+    display: none;
+}
+.sc{
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    height: 50px;
+    width: 50px;
+    background: rgba(0, 123, 255, 1);
+    border-radius: 50%;
+    display: none;
+    cursor: pointer;
+}
+.sc:hover{
+    background: rgba(0, 123, 255, .5);
+}
+.sc i{
+    color: White;
+    position: absolute;
+    margin-top: 13px;
+    margin-left: 15px;
+    font-size: 22px;
+}
+.sc.show{
+    display: block;
+    transition: all 1s ease;
+}
+@media(max-width:992px){
+   .home h1{
+       font-size: 55px;
+   }
+}
+@media(max-width:768px){
+    .home img{
+        display: none;
+    }
+    .box .card{
+        margin-bottom: 15px;
+    }
+    .box .card:nth-child(last){
+        margin-bottom: 0;
+    }
+    .meet .card{
+        margin-bottom: 40px;
+    }
+    .meet .card:nth-child(last){
+        margin-bottom: 0;
+    }
+}
+@media(max-width:401px){
+    .coll h1{
+        font-size: 40px;
+    }
+}
+@media(max-width:553px){
+    .meet h1{
+        font-size: 40px;
+    }
+}
+
